@@ -3,7 +3,7 @@
 
 ## This first function creates a special matrix and returns a list containing functions to
 ## set the value of the matrix, get the value of the matrix, set the value of the inverse
-## and get the value of the inverse
+## and get the value of the inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -21,8 +21,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ## This function computes the inverse of the matrix returned by the function makeCacheMatrix. 
-## If the inverse has already been calculated, CacheSolve retrieves the inverted matrix 
-## from the cache and skips computation. 
+## If the inverse has already been calculated using the function above, CacheSolve retrieves 
+## the inverted matrix from the cache and skips computation. 
 
 cacheSolve <- function(x, ...) {
         m <- x$getinverse()
@@ -36,7 +36,7 @@ cacheSolve <- function(x, ...) {
         m
 }
 
-### Testing
+### Testing the functions
 
 x <- matrix(1:4, 2,2) #Create matrix
 
